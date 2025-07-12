@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - Sir Henry Enterprise</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sir Henry Enterprise</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help.html" class="current">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="help-hero" class="page-hero">
+            <div class="container">
+                <h2>Your Questions Answered</h2>
+                <p>Find quick answers to common questions about our services and operations.</p>
+            </div>
+        </section>
+
+        <section id="faq-section">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+
+                <div class="faq-category">
+                    <h4>General Questions</h4>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq1">
+                        <label for="faq1">What types of businesses do you work with?</label>
+                        <div class="faq-answer">
+                            <p>Sir Henry Enterprise works with businesses of all sizes, from startups and SMEs to larger corporations, across various industries in Kenya. We tailor our solutions to meet unique business needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq2">
+                        <label for="faq2">How do I get started with Sir Henry Enterprise?</label>
+                        <div class="faq-answer">
+                            <p>Getting started is easy! Simply visit our <a href="contact.html">Contact Us</a> page, fill out the inquiry form, or give us a call. We'll schedule a free consultation to understand your needs and propose the best solutions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq3">
+                        <label for="faq3">Do you offer ongoing support after project completion?</label>
+                        <div class="faq-answer">
+                            <p>Absolutely! We believe in long-term partnerships. We offer various support and maintenance packages to ensure your systems run smoothly and your digital campaigns continue to perform optimally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h4>IT Solutions Questions</h4>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq4">
+                        <label for="faq4">What is managed IT services, and how can it benefit my business?</label>
+                        <div class="faq-answer">
+                            <p>Managed IT services involve outsourcing your IT operations to experts like us. Benefits include reduced IT costs, improved system reliability, enhanced cybersecurity, proactive problem-solving, and access to cutting-edge technology without the overhead of an in-house team.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq5">
+                        <label for="faq5">How do you ensure data security and privacy?</label>
+                        <div class="faq-answer">
+                            <p>Data security is paramount. We implement robust cybersecurity measures including firewalls, encryption, regular backups, and employee training. We adhere to best practices and relevant data protection regulations to safeguard your information.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq6">
+                        <label for="faq6">Can you help with cloud migration?</label>
+                        <div class="faq-answer">
+                            <p>Yes, we specialize in seamless cloud migration services. Whether you're moving to AWS, Azure, Google Cloud, or a hybrid solution, we guide you through every step, ensuring minimal disruption to your operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h4>Digital Marketing Questions</h4>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq7">
+                        <label for="faq7">How long does it take to see results from digital marketing?</label>
+                        <div class="faq-answer">
+                            <p>The timeframe for results varies depending on the service. SEO is a long-term strategy (3-6 months for significant impact), while PPC advertising can generate immediate leads. We set clear expectations and provide regular performance reports.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq8">
+                        <label for="faq8">Do I need a social media presence for my business?</label>
+                        <div class="faq-answer">
+                            <p>In today's digital age, a strategic social media presence is highly recommended. It helps build brand awareness, engage with customers, drive website traffic, and foster customer loyalty. We help you choose the right platforms for your audience.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq9">
+                        <label for="faq9">What is the importance of a well-designed website?</label>
+                        <div class="faq-answer">
+                            <p>Your website is often the first impression potential clients have of your business. A professional, responsive, and user-friendly website is crucial for credibility, lead generation, and converting visitors into customers. It's your 24/7 online storefront.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="help-cta" class="dark-section">
+            <div class="container">
+                <h3>Still have questions?</h3>
+                <p>Don't hesitate to reach out to our expert team for personalized assistance.</p>
+                <a href="contact.html" class="btn">Contact Support</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Sir Henry Enterprise. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

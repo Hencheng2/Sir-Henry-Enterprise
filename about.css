@@ -1,0 +1,180 @@
+/* --- About Us Specific Styles --- */
+
+/* Introduction Section */
+#introduction {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#introduction h3 {
+    color: #004d40; /* Dark Teal for heading */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block; /* Helps with underline alignment */
+}
+
+#introduction h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff9800; /* Amber underline */
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+#introduction p {
+    max-width: 900px;
+    margin: 25px auto 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Mission, Vision, Values Section */
+#mission-vision-values {
+    background-color: #ffffff; /* White background */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.m-v-v-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+    gap: 35px; /* Increased gap */
+    margin-top: 50px;
+}
+
+.m-v-v-item {
+    background: #e0f2f1; /* Light Teal background */
+    padding: 35px;
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* Stronger shadow for depth */
+    text-align: left;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.m-v-v-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Top border accent */
+    background: linear-gradient(to right, #004d40, #00796b); /* Gradient accent */
+    z-index: 1;
+}
+
+.m-v-v-item:hover {
+    transform: translateY(-10px); /* More pronounced lift on hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18); /* Stronger shadow on hover */
+}
+
+.m-v-v-item h4 {
+    color: #004d40;
+    font-size: 1.8em;
+    margin-top: 15px; /* Space from top accent */
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.m-v-v-item h4::after {
+    content: '';
+    display: block;
+    width: 50px; /* Shorter underline */
+    height: 2px;
+    background-color: #ff9800; /* Amber underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.m-v-v-item p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.m-v-v-item ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 15px;
+}
+
+.m-v-v-item ul li {
+    position: relative;
+    padding-left: 30px; /* Space for custom icon */
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.m-v-v-item ul li::before {
+    content: '✔'; /* Checkmark icon */
+    font-family: 'Arial', sans-serif; /* Ensure it renders */
+    color: #00796b; /* Teal color for checkmark */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.6; /* Align with text */
+}
+
+/* Why Choose Us (About Page specific) */
+#why-choose-us-about {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#why-choose-us-about h3 {
+    color: #004d40;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#why-choose-us-about h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff9800;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+#why-choose-us-about p {
+    max-width: 850px;
+    margin: 25px auto 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Responsive adjustments for about page */
+@media (max-width: 768px) {
+    #introduction h3, #why-choose-us-about h3 {
+        font-size: 1.8em;
+    }
+    #introduction p, #why-choose-us-about p {
+        font-size: 1em;
+    }
+    .m-v-v-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+    .m-v-v-item h4 {
+        font-size: 1.6em;
+    }
+}

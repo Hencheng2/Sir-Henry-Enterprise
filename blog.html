@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sir Henry Enterprise</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sir Henry Enterprise</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="current">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="blog-hero" class="page-hero">
+            <div class="container">
+                <h2>Insights & Innovation</h2>
+                <p>Stay updated with the latest trends and expert advice in IT and Digital Marketing.</p>
+            </div>
+        </section>
+
+        <section id="blog-posts">
+            <div class="container">
+                <h3>Latest Articles</h3>
+                <div class="blog-grid">
+                    <article class="blog-item">
+                        <img src="images/blog-ai.jpg" alt="AI in Digital Marketing"> <h4>The Rise of AI in Digital Marketing: What Kenyan Businesses Need to Know</h4>
+                        <p class="post-meta">By Sir Henry Team | July 8, 2025</p>
+                        <p>Explore how artificial intelligence is reshaping digital marketing strategies and what opportunities it presents for businesses in Kenya...</p>
+                        <a href="#" class="read-more">Read More &raquo;</a>
+                    </article>
+                    <article class="blog-item">
+                        <img src="images/blog-cybersecurity.jpg" alt="Cybersecurity Tips"> <h4>Essential Cybersecurity Tips for SMEs in Kenya</h4>
+                        <p class="post-meta">By Sir Henry Team | June 25, 2025</p>
+                        <p>A practical guide for small and medium-sized enterprises on how to protect their digital assets from common cyber threats...</p>
+                        <a href="#" class="read-more">Read More &raquo;</a>
+                    </article>
+                    <article class="blog-item">
+                        <img src="images/blog-nakuru.jpg" alt="Nakuru SEO"> <h4>Boosting Your Local SEO in Nakuru: A Practical Guide</h4>
+                        <p class="post-meta">By Sir Henry Team | June 10, 2025</p>
+                        <p>Learn key strategies to improve your local search engine optimization and attract more customers in the Nakuru region...</p>
+                        <a href="#" class="read-more">Read More &raquo;</a>
+                    </article>
+                    <article class="blog-item">
+                        <img src="images/blog-cloud.jpg" alt="Cloud Computing vs On-Premise"> <h4>Cloud Computing vs. On-Premise: Which IT Solution is Right for Your Business?</h4>
+                        <p class="post-meta">By Sir Henry Team | May 28, 2025</p>
+                        <p>A comprehensive comparison to help you decide between cloud-based infrastructure and traditional on-premise systems for your operational needs...</p>
+                        <a href="#" class="read-more">Read More &raquo;</a>
+                    </article>
+                    <article class="blog-item">
+                        <img src="images/blog-social.jpg" alt="Social Media Growth"> <h4>Unlocking Social Media Growth: Beyond the Basics for Kenyan Brands</h4>
+                        <p class="post-meta">By Sir Henry Team | May 15, 2025</p>
+                        <p>Dive into advanced social media marketing tactics that can help your brand connect deeper with audiences and drive engagement...</p>
+                        <a href="#" class="read-more">Read More &raquo;</a>
+                    </article>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Sir Henry Enterprise. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Services Page Specific Styles */
+#it-solutions, #digital-marketing {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+#digital-marketing {
+    background-color: #f8f8f8; /* Slightly different background for visual separation */
+}
+
+
+.service-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-detail-item {
+    background: #e0f2f1; /* Light Teal Background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.service-detail-item h4 {
+    color: #004d40;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9800; /* Amber underline */
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.service-detail-item p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.7;
+}
+
+#services-cta {
+    background: #004d40; /* Dark Teal */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+#services-cta h3 {
+    color: #fff;
+}
+
+#services-cta h3::after {
+    background-color: #ff9800;
+}
+
+#services-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0f2f1;
+}
+
+/* Responsive adjustments for services page */
+@media (max-width: 768px) {
+    .service-category-grid {
+        grid-template-columns: 1fr; /* Stack service items vertically on smaller screens */
+    }
+}
