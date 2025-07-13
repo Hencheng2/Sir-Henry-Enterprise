@@ -76,7 +76,9 @@ header a:hover {
 
 #hero {
     min-height: 400px;
-    background: #00796b; /* Medium Teal */
+    background-image: url('images/hero-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
     color: #fff;
     text-align: center;
     display: flex;
