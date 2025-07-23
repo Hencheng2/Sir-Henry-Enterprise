@@ -62,6 +62,44 @@
 .branch-item a:hover {
     color: #004d40;
 }
+/* Buttons */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #ff9800; /* Amber */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fb8c00; /* Darker Amber */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    color: #00796b; /* Medium Teal */
+    background: #e0f2f1; /* Light Teal Background */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    border: 1px solid #00796b;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #b2dfdb; /* Even Lighter Teal */
+    transform: translateY(-2px);
+    color: #004d40;
+}
+
 
 .btn-small {
     display: inline-block;
